@@ -1,5 +1,6 @@
 # chinese-t5
-chinese-t5-pytorch-generate
+基于追一科技发布的t5模型在pytorch上面的调用
+
 ```python
 #from tokenizer import T5PegasusTokenizer
 #from transformers.models.mt5.modeling_mt5 import MT5ForConditionalGeneration
