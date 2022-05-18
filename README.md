@@ -78,7 +78,6 @@ for token in token_result:
 print('ids = ')
 print(ids)
 ```
-
 这里切词语部分的结果
 
 ```
@@ -87,3 +86,6 @@ ids = [3,2]
 ```
 
 可以看出原始文本的分词非常的不准
+## 训练的时候注意几个细节
+1.input_ids如果后面长度不够的话，填充0，因为在模型中间0部分会被mask掉，不影响最终结果
+2.labels如果后面长度不够的话，填充-100，因为损失函数为crossentropyloss，保证不影响loss
